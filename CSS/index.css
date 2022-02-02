@@ -63,7 +63,7 @@
     display: grid;
     grid-template-rows: auto auto 1fr auto auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
     "header header header header header"
     "sidebar nav nav nav chat"
     "sidebar main main main chat"
@@ -83,30 +83,26 @@
 
 
 
-
-
 /*                .main and hardcoded heights (to fit the welcome.html embed without a scrollbar)               */
 
 /* mobile height */
 .main{
-  height: 58rem;
+  height: 70rem;
 }
 
 /* mobile + (anything above the max width of .main-element in document.css) */
 /* the text area width increases, decreasing the needed height. */
 @media (min-width: calc(600px + 1rem)) {
   .main{
-    height: 45rem;
+    height: 62rem;
   }
 }
 
 /* super-wide monitors.  */
 /* the font size and max width of .main element are increased in document.css */
 /* the font makes the text area increase in height needed to display the embed without a scrollbar. */
-@media (min-width: calc(1800px)) {
-  .main{
-    height: 100vh;
-  }
+@media (min-width: 1800px) {
+ 
 }
 
 /* make the embed fill .main */

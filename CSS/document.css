@@ -5,13 +5,15 @@
   font-size: 17px;
   color:#444;
   padding:.5rem 0rem;
-  background-color: #EEEEEE;  
+  background-color: #EEEEEE;
   border-radius: 1rem;
 }
 
-@media (min-width: 1800px) { 
-  :root * {font-size: 24px;}
-  .main-element {max-width:900px;}
+@media (min-width: 1400px) {
+  .main-element * {font-size: 24px;}
+  .main-element {
+  max-width:900px;
+}
 }
 
 .main-element h1,
