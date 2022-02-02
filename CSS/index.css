@@ -37,14 +37,14 @@
   .container{
     display: grid;
     /*
-    more than 2 fr's will result in the space remaining (after autos) to be split at the fractional value 
+    more than 2 fr's will result in the space remaining (after autos) to be split at the fractional value
     with a denomination being the sum of fr coefficents(1/2 in this case)
     */
     grid-template-rows: auto auto 1fr 1fr auto auto;
     /* Same idea as the rows, but implemented on the vertical columns.*/
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-    "header header header header"
+    "logo header header header"
     "sidebar nav nav nav"
     "sidebar main main main"
     "chat main main main"
@@ -64,7 +64,7 @@
     grid-template-rows: auto auto 1fr auto auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-    "header header header header header"
+    "logo header header header header"
     "sidebar nav nav nav chat"
     "sidebar main main main chat"
     "other other other other other"
@@ -102,7 +102,7 @@
 /* the font size and max width of .main element are increased in document.css */
 /* the font makes the text area increase in height needed to display the embed without a scrollbar. */
 @media (min-width: 1800px) {
- 
+
 }
 
 /* make the embed fill .main */
@@ -121,13 +121,14 @@
 .sidebar-element{
  height: 100%;
  width: 100%;
- 
+
 }
 
 .wrap{
   height: 100%;
   width: 100%;
   min-height: 25rem;
+  background-color: hsla(36, 5%, 21%, 1);
 }
 
 
@@ -139,13 +140,16 @@
 .container{
   /*gap: .1rem 0rem;*/
   background-color: hsla(36, 5%, 21%, 0.25);
-  text-align: center;
 }
 
 .item {
   background-color: #f5f5f5;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
   /*width:*/
-  margin: 0px;
-  border: 3px solid red;
+
+
+}
+
+.other {
+  display: none;
 }

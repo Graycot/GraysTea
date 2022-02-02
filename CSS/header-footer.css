@@ -4,15 +4,24 @@
 
 .header-element a {
   text-decoration: none;
-  box-shadow: none;  
+  box-shadow: none;
 }
 
 .header-element {
-  padding: 0 20px;
+  padding: 0.4rem .5rem 0.4rem 0rem;
   background-color: #1d1f1d;
-  height: 50px;
+
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
+}
+
+.logo-element {
+  height: 100%;
+  width: 100%;
+  background-color: #1d1f1d;
+
+  display: flex;
+  justify-content: center;
 }
 
 #logo {
@@ -20,11 +29,21 @@
   align-items: center;
 }
 
-#logo a {
-  font: 600 1.5rem/1.2 "Poppins", "sans-serif"; color: rgb(153, 142, 125);
+#logo a, #mobile-logo a {
+  font: 600 1.5rem/1.1 "Poppins", "sans-serif"; color: rgb(153, 142, 125);
 }
 
-.desktop-menu li:hover, .desktop-menu li:focus-within, 
+#mobile-logo {
+  display: none;
+}
+
+
+
+
+
+
+
+.desktop-menu li:hover, .desktop-menu li:focus-within,
 .mobile-menu li:hover, .mobile-menu li:focus-within,
 #logo:hover, #logo:focus, .discord-logo-wrapper:hover, .discord-logo-wrapper:focus {
   transform: scale(1.1);
@@ -36,70 +55,36 @@
 
     /*Border Color*/
 
-#home {
-  border: 1px solid #b3b6b3;
-}
+#header-button-1 {border: 1px solid #b3b6b3;}
+#header-button-2 {border: 1px solid #577590;}
+#header-button-3 {border: 1px solid #43AA8B;}
+#header-button-4 {border: 1px solid #90BE6D;}
+#header-button-5 {border: 1px solid #F9C74F;}
+#header-button-6 {border: 1px solid #F8961E;}
+#header-button-7 {border: 1px solid #F3722C;}
+#header-button-8 {border: 1px solid #F94144;}
 
-#fun{
-  border: 1px solid #e49c3d;
-}
-
-#blog {
-  border: 1px solid #74c974;
-}
-
-#guestbook{
-  border: 1px solid #ee22c2;
-}
-
-#about{
-  border: 1px solid #498afb;
-}
-
-#contact {
-  border: 1px solid #ff3860;
-}
-
-  /*Color*/
-
-#home a {
-  color: #b3b6b3;
-}
-
-#fun a {
-  color: #e49c3d;
-}
-
-#blog a {
-  color: #74c974;
-}
-
-#guestbook a{
-  color:#ee22c2;
-}
-
-#about a{
-  color: #498afb;
-}
-
-#contact a {
-  color: #ff3860;
-}
+/*Link Color*/
+#header-button-1 a {color: #b3b6b3;}
+#header-button-2 a {color: #577590;}
+#header-button-3 a {color: #43AA8B;}
+#header-button-4 a {color: #90BE6D;}
+#header-button-5 a {color: #F9C74F;}
+#header-button-6 a {color: #F8961E;}
+#header-button-7 a {color: #F3722C;}
+#header-button-8 a {color: #F94144;}
 
   /*Desktop Header*/
 
 .desktop-menu li{
     font-family: "Poppins", sans-serif;
-    
+
     margin: 0px .3rem;
     border-radius: 5px;
-    
+
     padding: .2rem .4rem;
-    
+
 }
-
-
-
 
 /*Mobile Header*/
 
@@ -125,7 +110,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  
+
 }
 
 
@@ -140,9 +125,9 @@
 .mobile-menu {
   display: none;
   position: absolute;
-  top: 50px;
+  top: 2rem;
   left: 0;
-  height: calc(100vh - 50px);
+  height: calc(100%);
   width: 100%;
   font-family: "Poppins", sans-serif;
   color: white;
@@ -183,9 +168,15 @@
   header nav {
     display: none;
   }
-
+  #logo {display: none;}
   #hamburger-icon {
     display: block;
+  }
+  #mobile-logo {display: initial;}
+  .header-element {
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    display: flex;
+    justify-content: space-between;
   }
   .navigation{
     display: none;
@@ -196,14 +187,14 @@
 
 .footer-element{
   padding: 4px 0px;
-  overflow:auto; 
+  overflow:auto;
   bottom:0;
   right:0;
-  left:0; 
+  left:0;
   background:#1d1f1d;
   color: antiquewhite;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   font: 600 1.0rem/1.2 "Poppins", "sans-serif"; color: rgb(153, 142, 125);
 }
 
