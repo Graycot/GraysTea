@@ -37,11 +37,11 @@
   .container{
     display: grid;
     /*
-    Determine sizing attributes of the horizontal rows. The mobile layout (this one) is easy to follow, since each element occupies the entire width of the screen.
-    auto is used to expand/shrink the parent item to the size of the child's content.
-    1fr uses up all of the space left after the auto's have used their required space.
+    more than 2 fr's will result in the space remaining (after autos) to be split at the fractional value 
+    with a denomination being the sum of fr coefficents(1/2 in this case)
     */
     grid-template-rows: auto auto 1fr 1fr auto auto;
+    /* Same idea as the rows, but implemented on the vertical columns.*/
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
     "header header header header"
@@ -52,21 +52,26 @@
     "footer footer footer footer"
     ;
   }
-
-.sidebar,
-.wrap {
 }
 
 
+/* Desktop layout */
 
+@media (min-width: 1250px) {
 
-
-
-
+  .container{
+    display: grid;
+    grid-template-rows: auto auto 1fr auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header header header"
+    "sidebar nav nav nav chat"
+    "sidebar main main main chat"
+    "other other other other other"
+    "footer footer footer footer footer"
+    ;
+  }
 }
-
-
-
 
 
 
