@@ -111,6 +111,29 @@
   width: 100%;
 }
 
+/*                Chat & Sidebar              */
+
+.chat-element{
+  height: 100%;
+  width: 100%;
+}
+
+.sidebar-element{
+ height: 100%;
+ width: 100%;
+ 
+}
+
+.wrap{
+  height: 100%;
+  width: 100%;
+  min-height: 25rem;
+}
+
+
+
+
+
 /*                temporary for dev purposes               */
 
 .container{
@@ -124,5 +147,5 @@
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
   /*width:*/
   margin: 0px;
-  border: 4px solid red;
+  border: 3px solid red;
 }
