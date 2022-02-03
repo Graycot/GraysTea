@@ -36,6 +36,7 @@
 
   .container{
     display: grid;
+    min-height: 100vh;
     /*
     more than 2 fr's will result in the space remaining (after autos) to be split at the fractional value
     with a denomination being the sum of fr coefficents(1/2 in this case)
@@ -93,16 +94,20 @@
 /* mobile + (anything above the max width of .main-element in document.css) */
 /* the text area width increases, decreasing the needed height. */
 @media (min-width: calc(600px + 1rem)) {
-  .main{
-    height: 62rem;
+  .main {
+    min-height: 62rem;
+    height: 100%;
   }
+
 }
 
 /* super-wide monitors.  */
 /* the font size and max width of .main element are increased in document.css */
 /* the font makes the text area increase in height needed to display the embed without a scrollbar. */
 @media (min-width: 1800px) {
-
+  .main{
+    height: 100%;
+  }
 }
 
 /* make the embed fill .main */
