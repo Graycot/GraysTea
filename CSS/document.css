@@ -29,8 +29,8 @@ body{
   margin-top: 0.5rem;
 }
 
-.main-element figcaption{
-  margin: .5rem 0rem;
+.main-element figcaption, .main-element aside{
+  margin: .2rem 0rem;
   text-align: center;
   color: hsla(0,0%,27%,0.3);
 }
@@ -46,4 +46,9 @@ figure * { width: 100%; }
 
 .main-element * {
   grid-column: start/end;
+}
+.size-1{
+  display: block;
+  width: 30%;
+  margin: auto;
 }
