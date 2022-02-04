@@ -11,7 +11,7 @@ class Header extends HTMLElement {
         <ul class="desktop-menu">
           <li id="header-button-1"><a href="/index.html">Home</a></li>
           <li id="header-button-2"><a href="/content/grays-tea/about.html" >About</a></li>
-          <li id="header-button-3" class="header-nowrap"><a href="/content/grays-tea/CozyRing/CozyRing.html">Join Cozy Ring</a></li>
+          <li id="header-button-3"><a href="/content/grays-tea/CozyRing/CozyRing.html">Join Cozy Ring</a></li>
           <li id="header-button-4"><a href="#">Web Dev Resources</a></li>
           <li id="header-button-5"><a href="#" >Fun</a></li>
           <li id="header-button-6"><a href="#">Links</a></li>

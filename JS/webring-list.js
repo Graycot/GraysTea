@@ -8,7 +8,7 @@ class Webrings extends HTMLElement {
 
     <main class="webrings-element">
       <table>
-        <th><div id='CozyRing'><script type="text/javascript" src="https://graystea.neocities.org/CozyRing/compact-text-widget.js"></script></div></th>
+        <th><div id='CozyRing'><script type="text/javascript" src="https://raw.githack.com/Graycot/CozyRing/master/compact-text-widget.js"></script></div></th>
         <th class="spacer"></th>
         <th><a href="https://hotlinewebring.club/GraysTea/previous"> < </a></th>
         <th><a href="https://hotlinewebring.club/" target="_blank">Hotline</a></th>
@@ -22,7 +22,7 @@ class Webrings extends HTMLElement {
         <th><a href="https://geekring.net/" target="_blank"> GeekRing </a></th>
         <th><a href="http://geekring.net/site/1/next"> > </a></th>
         <th class="spacer"></th>
-        <th><div class="yw-widget-text nowrap" data-yw-url="YOUR_URL_HERE"><script src="/widgets/yesterweb.js"></script></div></th>
+        <th><div class="yw-widget-text nowrap" data-yw-url="https://graystea.neocities.org/"><script src="/widgets/yesterweb.js"></script></div></th>
         
 
       </table>
@@ -35,7 +35,7 @@ class Webrings extends HTMLElement {
 customElements.define('webring-list-component', Webrings);
 
 var imported = document.createElement('script');
-imported.src = 'https://graystea.neocities.org/CozyRing/compact-text-widget.js';
+imported.src = 'https://raw.githack.com/Graycot/CozyRing/master/compact-text-widget.js';
 document.head.appendChild(imported);
 
 var imported = document.createElement('script');
