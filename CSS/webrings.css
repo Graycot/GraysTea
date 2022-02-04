@@ -4,6 +4,11 @@ overflow: auto;
 }
 
 .webrings-element{
+  background-color: #e0e0e0;
+}
+
+#CozyRing table {
+  /*background-color: #e0e0e0;*/
 }
 
 .webrings-element table {
