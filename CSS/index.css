@@ -17,9 +17,10 @@
   auto is used to expand/shrink the parent item to the size of the child's content.
   1fr uses up all of the space left after the auto's have used their required space.
   */
-  grid-template-rows: auto auto 1fr auto auto auto auto;
+  grid-template-rows: auto auto auto 1fr auto auto auto auto;
   grid-template-columns: 1fr;
   grid-template-areas:
+  "logo"
   "header"
   "nav"
   "main"

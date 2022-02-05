@@ -19,21 +19,34 @@
 .nav-button-6 {color: #F8961E; border: 1px solid #F8961E;}
 .nav-button-7 {color: #F3722C; border: 1px solid #F3722C;}
 .nav-button-8 {color: #F94144; border: 1px solid #F94144;}
+
+.logo-button {
+  color: rgb(153, 142, 125); border: 1px solid rgb(153, 142, 125);
+  padding: .25rem .6rem;
+  border-radius: .5rem;
+}
+
 /* Shape & Size*/
 
 .nav-button {
-  line-height: 2rem;
+  line-height: 1rem;
 
-  padding: .15rem .4rem;
-  margin: 0rem .1rem;
+  padding: .3rem .4rem;
+  margin: .2rem .1rem;
   border-radius: .3rem;
+  display: inline-block;
 }
 
-.nav-button:hover{
-  transform: scale(1.1);
+.nav-button:hover, .nav-button:focus{
+  transform:scale(1.05, 1.1);
   transition: 0.3s;
-  border: 1px solid rgb(153, 142, 125);
-  color: rgb(153, 142, 125);
+  color: rgb(153, 142, 125); border: 1px solid rgb(153, 142, 125);
+}
+
+.logo-button:hover, .logo-button:focus{
+  transform:scale(1.1, 1.05);
+  transition: 0.3s;
+  color: hsla(0,0%,27%,1); border: 1px solid hsla(0,0%,27%,1);
 }
 
 
@@ -41,37 +54,54 @@
 .logo-element{
   height: 100%;
   width: 100%;
-
-  background-color: #1d1f1d;
   display: flex;
   justify-content: center;
   align-items: center;
-  font: 600 1.5rem/1.1 "Poppins", "sans-serif"; color: rgb(153, 142, 125);
+
+  background-color: #1d1f1d;
+  font: 600 1.5rem/1 "Poppins", "sans-serif";
 }
 
-.mobile-logo{
+/*             Mobile defaults:             */
 
+
+.navigation{
+  display: initial;
 }
 
-  /*             Desktop, Tablet, and Mobile Header Logic             */
+/*             Desktop, Tablet, and Mobile Header Logic             */
 
 @media only screen and (max-width: calc(950px)) {
-  header nav {
-    display: none;
-  }
-  .logo-element {
-    display: none;
-  }
-  #hamburger-icon {
-    display: block;
-  }
-  #mobile-logo {display: initial;}
-  .header-element {
-    padding: 0.3rem 1rem 0.3rem 1rem;
-    display: flex;
-    justify-content: space-between;
-  }
+
   .navigation{
     display: none;
   }
+  .logo-button {
+    border-radius: 0rem;
+    border:none;
+
+    padding: .1rem .3rem;
+  }
+
+  .logo-button:hover, .logo-button:focus{
+    transform:none;
+    border: none;
+    transition: 0.3s;
+  }
+  
+}
+
+/*                Footer                 */
+
+.footer-element{
+  padding: 4px 0px;
+  overflow:auto;
+  bottom:0;
+  right:0;
+  left:0;
+  background:#1d1f1d;
+  color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  font: 600 1.0rem/1.2 "Poppins", "sans-serif"; color: rgb(153, 142, 125);
 }
