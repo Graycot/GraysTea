@@ -32,7 +32,7 @@
 
 /* Tablet layout */
 
-@media (min-width: 1000px) {
+@media (min-width: 950px) {
 
   .container{
     display: grid;
@@ -43,7 +43,7 @@
     */
     grid-template-rows: auto auto 1fr 1fr auto auto;
     /* Same idea as the rows, but implemented on the vertical columns.*/
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto 1fr 1fr 1fr;
     grid-template-areas:
     "logo header header header"
     "sidebar nav nav nav"
@@ -58,7 +58,7 @@
 
 /* Desktop layout */
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
 
   .container{
     display: grid;

@@ -1,11 +1,5 @@
 body{
   background-color: #e0e0e0;
-
-  
-}
-
-.bg-image {
-
 }
 
 .main-element {
@@ -62,3 +56,7 @@ figure * { width: 100%; }
   width: 30%;
   margin: auto;
 }
+
+.main-element a { box-shadow: inset 0 -0.10em rgb(153, 142, 125);  }
+.main-element a:hover, .main-element a:focus,
+.underline { box-shadow: inset 0 -0.10em #383838;  }

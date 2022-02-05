@@ -7,7 +7,7 @@ class Logo extends HTMLElement {
     this.innerHTML = `
 
     <header class="logo-element">
-      <div id="logo"><a href="/index.html">Gray's Tea</a></div>
+      <a href="/index.html">Gray's Tea</a>
     </header>
 
     `;

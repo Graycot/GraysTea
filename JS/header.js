@@ -7,34 +7,16 @@ class Header extends HTMLElement {
     this.innerHTML = `
 
     <header class="header-element">
-      <nav>
-        <ul class="desktop-menu">
-          <li id="header-button-1"><a href="/index.html">Home</a></li>
-          <li id="header-button-2"><a href="/content/grays-tea/about.html" >About</a></li>
-          <li id="header-button-3"><a href="/content/grays-tea/CozyRing/CozyRing.html">Join Cozy Ring</a></li>
-          <li id="header-button-4"><a href="#">Web Dev Resources</a></li>
-          <li id="header-button-5"><a href="#" >Fun</a></li>
-          <li id="header-button-6"><a href="#">Links</a></li>
-          <li id="header-button-7"><a href="/content/grays-tea/manifesto.html">Manifesto</a></li>
-          <li id="header-button-8"><a href="/content/grays-tea/contact.html">Contact</a></li>
-        </ul>
+      <nav class="desktop-menu">
+          <a class="nav-button-1 nav-button" href="/index.html">Home</a>
+          <a class="nav-button-2 nav-button" href="/content/grays-tea/about.html" >About</a>
+          <a class="nav-button-3 nav-button" href="/content/grays-tea/CozyRing/CozyRing.html">Join Cozy Ring</a>
+          <a class="nav-button-4 nav-button" href="#">Web Dev Resources</a>
+          <a class="nav-button-5 nav-button" href="#" >Fun</a>
+          <a class="nav-button-6 nav-button" href="#">Links</a>
+          <a class="nav-button-7 nav-button" href="/content/grays-tea/manifesto.html">Manifesto</a>
+          <a class="nav-button-8 nav-button" href="/content/grays-tea/contact.html">Contact</a>
       </nav>
-      <div id="mobile-logo"><a href="/index.html">Gray's Tea</a></div>
-      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-        <ul class="mobile-menu">
-          <li id="header-button-1"><a href="/index.html">Home</a></li>
-          <li id="header-button-2"><a href="/content/grays-tea/about.html" >About</a></li>
-          <li id="header-button-3"><a href="/content/grays-tea/CozyRing/CozyRing.html">Join Cozy Ring</a></li>
-          <li id="header-button-4"><a href="#">Web Dev Resources</a></li>
-          <li id="header-button-5"><a href="#" >Fun</a></li>
-          <li id="header-button-6"><a href="#">Links</a></li>
-          <li id="header-button-7"><a href="/content/grays-tea/manifesto.html">Manifesto</a></li>
-          <li id="header-button-8"><a href="/content/grays-tea/contact.html">Contact</a></li>
-        </ul>
-      </div>
     </header>
 
     `;
