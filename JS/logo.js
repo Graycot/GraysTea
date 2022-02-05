@@ -15,7 +15,3 @@ class Logo extends HTMLElement {
 }
 
 customElements.define('logo-component', Logo);
-
-function toggleMobileMenu(menu) {
-  menu.classList.toggle('open');
-}
