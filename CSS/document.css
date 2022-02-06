@@ -5,6 +5,7 @@ body{
 .main-element {
   margin: 1rem auto .5rem auto;
   max-width:600px;
+  min-height: 95vh;
   line-height:1.5;
   font-size: 17px;
   color:#444;
