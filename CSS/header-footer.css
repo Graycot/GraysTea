@@ -80,10 +80,11 @@
 /*             Desktop, Tablet, and Mobile Header Logic             */
 
 @media only screen and (max-width: calc(950px)) {
-
+  /* !!! 
   .navigation{
     display: none;
   }
+  */
   .logo-button {
     border-radius: 0rem;
     border:none;

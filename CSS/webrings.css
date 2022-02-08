@@ -1,24 +1,24 @@
-.webrings-element th a{
-padding: 0rem 0.05rem;
-overflow: auto;
-}
-
-.webrings-element{
+.navigation{
   background-color: #e0e0e0;
-  font-size: 19px;
+}
+.webrings-element{
+  font-size: 16px;
+  padding: .1rem .2rem;
+  margin: 0.0rem  auto;
+  max-width:max-content;
 }
 
-#CozyRing table {
-  /*background-color: #e0e0e0;*/
+.webrings-element .webring-bin{
+  display: inline-block;
+  padding: 0rem 0.05rem;
+  border: 1px solid #444;
+  padding: .2rem .40rem;
+  margin: 0.15rem 0.05rem;
+  border-radius: .3rem;
+
 }
 
-.webrings-element table {
-  margin: 0rem auto;
-}
 
-.spacer {
-  padding: 0rem 0.2rem;
-}
 
 
 
