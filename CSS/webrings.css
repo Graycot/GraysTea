@@ -18,9 +18,13 @@
 
 }
 
+.webrings-element .webring-bin:hover, .webrings-element .webring-bin:focus { 
+  transform:scale(1.05, 1.1);
+  transition: 0.3s;
+  box-shadow: inset 0 -0.10rem rgb(107, 99, 88); 
+}
 
-
-
-
-
+.webrings-element .webring-bin a:hover, .webrings-element .webring-bin a:focus { 
+  color: rgb(107, 99, 88); 
+}
 
