@@ -76,20 +76,11 @@
 }
 
 
-
-
-
-
-
-
-
-
-
 /*                .main and hardcoded heights (to fit the welcome.html embed without a scrollbar)               */
 
 /* mobile height */
 .main{
-  height: 70rem;
+  height: 67rem;
 }
 
 /* mobile + (anything above the max width of .main-element in document.css) */
