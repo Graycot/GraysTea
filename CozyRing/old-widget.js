@@ -32,27 +32,9 @@ var styles = `
 
 #CozyRing * {
 display: inline-block;
+
 }
 
-/*  The script tag itself takes up a 0 by 0 pixel space, but it has a BORDER of 2x2 pixels, and is invisible. WHAT THE HELL? */
-/*  It also moves to the line below the element, breaking inline-block. This took me 3 hours, THREE HOURS TO SOLVE.  */
-#CozyRing script {
-  display: ;
-  height: ;
-  width: ;
-}
-
-//note, address this css overriding page css.
-#CozyRing table {
-  background-color: #f5f5f5; 
-  margin: 0rem auto; /* centers the widget */
-}
-
-
-
-#CozyRing .webring-info {
-   text-align:center;
-}
 
 
 

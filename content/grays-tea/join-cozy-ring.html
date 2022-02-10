@@ -10,6 +10,17 @@
         <link rel="stylesheet" href="/CSS/header-footer.css">
         <script src="/JS/header.js" defer></script>
         <script src="/JS/footer.js" defer></script>
+        <style>
+            .main-element .no-link-highlight #CozyRingWrapper{
+            display:list-item;
+            list-style-type: decimal;
+            }
+
+            .main-element .no-link-highlight ul {
+                padding-left: 15px;
+                list-style-type: disc;
+            }
+        </style>
     </head>
     <body>
 
@@ -40,11 +51,44 @@
         <p>
             We don't have a formal application set up yet, so just let us know that you are interested in joining by heading over to my <a href="https://discord.com/invite/JM34yvMaFP">Discord</a> and sending a message in #web-ring!
         </p>
- 
+        <br>
+<div class="no-link-highlight">
+        <h3>Adding the webring to your site:</h3>
+        <p>Place the code for the widget of your choice where you would like the webring embed to be.</p>
+        <br>
+        <div id='CozyRing'><script src="/CozyRing/sites.js"></script><script src="/CozyRing/text-unstyled-Index-Random.js"></script></div>
+        <div id='CozyRing'><script src="/CozyRing/sites.js"></script><script src="/CozyRing/text-unstyled.js"></script></div>
+        <br>
+        <p>The unstyled widgets (#1 and #2) are recommended if you would like to use CSS to adjust the look and feel to fit your website.</p>
+        <br>
+        <p>The following #ID's can be used to target specific parts of the widget.</p>
+        <br>
+        <ul>
+        <li>#CozyRing</li>
+            <ul>
+            <li>#CozyRingWrapper</li>
+                <ul>
+                <li>#CozyRingError</li>
+                <li>#CozyRingPrevious</li>
+                <li>#CozyRingIndex</li>
+                <li>#CozyRingHome</li>
+                <li>#CozyRingRandom</li>
+                <li>#CozyRingNext</li>
+                </ul>
+            </ul>
+        </ul>
+        <br>
+        <p>Use "<strong>#CozyRing #CozyRingWrapper {display: block}</strong>" to overwrite the default inline-block display of the widget.</p>
 
 
 
 
+
+
+
+
+
+</div>
       </article>
 </main>
 <footer-component></footer-component>
