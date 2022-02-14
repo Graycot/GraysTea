@@ -18,6 +18,7 @@ class Header extends HTMLElement {
           <a class="nav-button-8 nav-button" href="/content/grays-tea/about.html">About</a>
           <a class="nav-button-9 nav-button" href="/content/grays-tea/contact.html">Contact</a>
           <a class="nav-button-10 nav-button" href="/testing-zone.html">Testing Zone</a>
+          <a class="nav-button-11 nav-button" href="/content/grays-tea/buttons-and-gifs.html">Buttons And Gifs</a>
       </nav>
     </header>
 

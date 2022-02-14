@@ -11,7 +11,9 @@ class Webrings extends HTMLElement {
         <div id='CozyRing'></div>
       </div>
       <div class="webring-bin">
-      <div class="yw-widget-text nowrap" data-yw-url="https://graystea.neocities.org/"></script></div>
+        <a href="https://webring.yesterweb.org/noJS/index.php?d=prev&url=https://graystea.neocities.org/"> <</a>
+        <a href="https://yesterweb.org/webring/">Yesterweb</a>
+        <a href="https://webring.yesterweb.org/noJS/index.php?d=next&url=https://graystea.neocities.org/"> > </a>
       </div>
       <div class="webring-bin">
         <a href="https://webring.bucketfish.me/redirect.html?to=prev&name=Gray"> < </a>
@@ -39,6 +41,8 @@ class Webrings extends HTMLElement {
   }
 }
 
+
+
 customElements.define('webring-list-component', Webrings);
 
 var imported = document.createElement('script');
@@ -48,9 +52,6 @@ var imported = document.createElement('script');
 imported.src = '/CozyRing/text-unstyled.js';
 document.head.appendChild(imported);
 
-var imported = document.createElement('script');
-imported.src = '/widgets/yesterweb.js';
-document.head.appendChild(imported);
 
 
 
