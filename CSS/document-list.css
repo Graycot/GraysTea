@@ -1,0 +1,131 @@
+/*        Grid and basic layout       */
+html{
+  
+}
+
+body{
+  background-color: #e0e0e0;
+  
+}
+.grid-wrapper {
+  display:grid;
+  grid-template-columns: 5% [start] 90% [end] 5%;
+  
+  margin: 0.5rem auto 0.5rem auto;
+  padding:.5rem 0rem;
+  max-width:600px;
+  min-height:90.8vh;
+
+  background-color: #EEEEEE;
+  border-radius: .5rem;
+}
+.grid-wrapper * {
+  grid-column: start/end;
+}
+
+@media (min-width: 1400px) {
+  .grid-wrapper * {font-size: 24px;}
+  .grid-wrapper {
+  max-width:900px;
+  }
+}
+
+/*        main container       */
+.main-container{
+  font-size: 17px;
+  color:#444;
+}
+
+
+
+.header p{
+  margin: 0.5rem 0.0rem;
+}
+
+/*        .link-buttons       */
+
+
+.main-container a { 
+  display: inline-block;
+  border: 1px solid rgb(121, 121, 121);
+  padding: 0.1rem .4rem;
+  margin: 0.2rem 0.1rem;
+  border-radius: .5rem;
+}
+
+h2 { 
+  display: inline-block;
+  height: rem;
+  font: 700 1.25rem "Roboto"; color: hsl(000, 0%, 30%);
+  margin: auto 0.3rem auto 0.3rem;
+}
+
+
+.title { 
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid hsla(0,0%,27%,0.35);
+  margin-top: 0.4rem;
+  padding: 0.4rem 0;
+}
+
+
+p:not(.title p):not(.header p) { 
+  display: inline-block;
+  border: 1px dashed #444;
+  padding: .1rem .4rem;
+  margin: 0.2rem 0.1rem;
+  border-radius: .3rem;
+}
+
+.title p{
+  display: inline-block;
+  font: 700 0.75rem "Roboto"; color: hsl(000, 0%, 30%);
+  border: 1px solid #444;
+  padding: 0.1rem .4rem;
+  margin: 0.15rem 0.2rem;
+  border-radius: .3rem;
+}
+
+/*  Hover Effect */
+.main-container a:hover, .main-container a:focus {
+  transform:scale(1.05, 1.15);
+  transition: 0.2s; 
+  box-shadow: inset 0 -0.15rem rgb(121, 121, 121);
+}
+
+a.c0:hover, a.c0:focus {box-shadow: inset 0 -0.12rem #030303;}
+a.c1:hover, a.c1:focus {box-shadow: inset 0 -0.15rem #598af5;}
+a.c2:hover, a.c2:focus {box-shadow: inset 0 -0.15rem #43AA8B;}
+a.c3:hover, a.c3:focus {box-shadow: inset 0 -0.15rem #df9c00;}
+a.c4:hover, a.c4:focus {box-shadow: inset 0 -0.15rem #e76a03;}
+a.c5:hover, a.c5:focus {box-shadow: inset 0 -0.15rem #f0171a}
+a.c6:hover, a.c6:focus {box-shadow: inset 0 -0.15rem #d43bc8}
+a.c7:hover, a.c7:focus {box-shadow: inset 0 -0.15rem #5618c9}
+
+p.c0 {color: #598af5; border: 2px solid #000000ad;}
+p.c1 {color: #598af5; border: 2px solid #598af5ad;}
+p.c2 {color: #43AA8B; border: 2px solid #43AA8Bad;}
+p.c3 {color: #df9c00; border: 2px solid #df9c00ad;}
+p.c4 {color: #e76a03; border: 2px solid #e76a03ad;}
+p.c5 {color: #f0171a; border: 2px solid #f0171aad;}
+p.c6 {color: #d43bc8; border: 2px solid #d43bc8ad;}
+p.c7 {color: #5618c9; border: 2px solid #5618c9ad;}
+
+a.c0 {box-shadow: 0 0.02rem 0.1rem 0.05rem  #0f0f0f;}
+a.c1 {box-shadow: 0 0.02rem 0.1rem 0.0  #598af5;}
+a.c2 {box-shadow: 0 0.02rem 0.1rem 0.0  #43AA8B;}
+a.c3 {box-shadow: 0 0.02rem 0.1rem 0.0  #df9c00;}
+a.c4 {box-shadow: 0 0.02rem 0.1rem 0.0  #e76a03;}
+a.c5 {box-shadow: 0 0.02rem 0.1rem 0.0  #f0171a;}
+a.c6 {box-shadow: 0 0.02rem 0.1rem 0.0  #d43bc8;}
+a.c7 {box-shadow: 0 0.02rem 0.1rem 0.0  #5618c9;}
+
+a.foot{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: max-content;
+  margin: 0 auto;
+}

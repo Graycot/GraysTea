@@ -1,6 +1,6 @@
 :root {font:20px/1.2 "Roboto", sans-serif; } 
 
-:root * {
+html * {
     margin:           unset;
     box-sizing:       unset;
     padding:          unset;

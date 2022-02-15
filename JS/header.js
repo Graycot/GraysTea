@@ -17,8 +17,8 @@ class Header extends HTMLElement {
           <a class="nav-button-7 nav-button" href="/content/grays-tea/my-projects.html">My Projects</a>
           <a class="nav-button-8 nav-button" href="/content/grays-tea/about.html">About</a>
           <a class="nav-button-9 nav-button" href="/content/grays-tea/contact.html">Contact</a>
-          <a class="nav-button-10 nav-button" href="/testing-zone.html">Testing Zone</a>
-          <a class="nav-button-11 nav-button" href="/content/grays-tea/buttons-and-gifs.html">Buttons And Gifs</a>
+          <a class="WIP nav-button-10 nav-button" href="/template.html">Testing Zone</a>
+          <a class="WIP nav-button-11 nav-button" href="/content/grays-tea/clone-this-website.html">Clone this website</a>
       </nav>
     </header>
 
@@ -27,7 +27,3 @@ class Header extends HTMLElement {
 }
 
 customElements.define('header-component', Header);
-
-function toggleMobileMenu(menu) {
-  menu.classList.toggle('open');
-}
