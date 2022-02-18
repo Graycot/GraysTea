@@ -1,8 +1,4 @@
 /*        Grid and basic layout       */
-html{
-  
-}
-
 body{
   background-color: #e0e0e0;
   
@@ -122,7 +118,6 @@ a.c6 {box-shadow: 0 0.02rem 0.1rem 0.0  #d43bc8;}
 a.c7 {box-shadow: 0 0.02rem 0.1rem 0.0  #5618c9;}
 
 a.foot{
-  
   display: flex;
   align-items: center;
   justify-content: center;

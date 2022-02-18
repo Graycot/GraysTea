@@ -7,7 +7,7 @@ class Footer extends HTMLElement {
     this.innerHTML = `
 
     <footer class="footer-element">
-    <a class="footer-button" href="#">Created by Gray</a>
+    <a class="footer-button" href="#">Gray's Tea</a>
 
     <svg class="discord-logo" width="45" height="22" viewBox="0 0 71 55" fill="none" xmlns="http://www.w3.org/2000/svg" >
       <g clip-path="url(#clip0)">
