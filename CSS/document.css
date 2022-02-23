@@ -2,38 +2,88 @@ body{
   background-color: #e0e0e0;
 }
 
-.main-element article{
-  min-height:91vh;
-}
-.main-element {
+.grid-wrapper {
+  display:grid;
+  grid-template-columns: 5% [start] 90% [end] 5%;
+  
   margin: 0.5rem auto 0.5rem auto;
-  max-width:600px;
-  line-height:1.5;
-  font-size: 17px;
-  color:#444;
   padding:.5rem 0rem;
+  max-width:600px;
+ 
+
+  background-color: #EEEEEE;
+  border: 1px solid rgb(130, 130, 130);
   border-radius: .5rem;
 }
 
+.grid-wrapper * {
+  grid-column: start/end;
+}
+
 @media (min-width: 1400px) {
-  .main-element * {font-size: 24px;}
-  .main-element {
+  .grid-wrapper * {font-size: 24px;}
+  .grid-wrapper {
   max-width:900px;
   }
 }
 
-.main-element h1,
-.main-element h2,
-.main-element h3{
-  line-height:1.8;
-  
+/*        main content       */
+.main-content{
+  font-size: 17px;
+  color:#444;
 }
 
-.main-element figure {
+
+/*        Links and Underlines       */
+
+.main-content a { box-shadow: inset 0 -0.10em rgb(153, 142, 125);  }
+.main-content a:hover, .main-content a:focus,
+.underline { box-shadow: inset 0 -0.10em #383838;  }
+
+
+
+
+
+h1 {
+  font: 700 1.8rem "Roboto"; color: hsl(000, 0%, 30%);
+  padding: 0 0 0.5rem 0;
+}
+
+h2 { 
+  font: 700 1.25rem "Roboto"; color: hsl(000, 0%, 30%);
+  border-top: 1px solid hsla(0,0%,27%,0.35);
+  
+  padding: 0.5rem 0;
+}
+
+h3 {
+  font: 700 1rem "Roboto"; color: hsl(000, 0%, 30%);
+  border-top: 1px dashed hsla(0,0%,27%,0.35);
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+p, ol, ul{
+  padding: 0.0rem 0 0.6rem 0;
+}
+
+
+.main-content {
+  
+  max-width:600px;
+  line-height:1.5;
+  font-size: 18px;
+  color:#444;
+ 
+}
+
+
+
+.main-content figure {
   margin-top: 0.5rem;
 }
 
-.main-element figcaption, .main-element aside{
+.main-content figcaption, .main-content aside{
   margin: .2rem 0rem;
   text-align: center;
   color: hsla(0,0%,27%,0.3);
@@ -42,9 +92,7 @@ body{
 
 figure * { width: 100%; }
 
-.main-element {
-  display:grid;
-  grid-template-columns: 5% [start] 90% [end] 5%;
+.main-content {
   background-color: #EEEEEE;
   
 }
@@ -52,15 +100,21 @@ figure * { width: 100%; }
   /* background: linear-gradient(#e0e0e0 , #EEEEEE 1.5rem) ; */
 
 
-.main-element * {
+.main-content * {
   grid-column: start/end;
 }
+
+.size-0{
+  display: block;
+  width: 100%;
+  margin: auto;
+  border: 2px solid #444;
+  border-radius: 0.3rem;
+}
+
 .size-1{
   display: block;
   width: 30%;
   margin: auto;
 }
 
-.main-element a { box-shadow: inset 0 -0.10em rgb(153, 142, 125);  }
-.main-element a:hover, .main-element a:focus,
-.underline { box-shadow: inset 0 -0.10em #383838;  }

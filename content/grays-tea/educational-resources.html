@@ -7,15 +7,20 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i" />
         <link rel="stylesheet" href="/CSS/reset.css">
         <link rel="stylesheet" href="/CSS/document-list.css">
+        <link rel="stylesheet" href="/CSS/document-layout.css">
         <link rel="stylesheet" href="/CSS/nav-footer.css">
         <script src="/JS/nav.js" defer></script>
         <script src="/JS/footer.js" defer></script>
     </head>
     <body>
 
-<nav-component></nav-component>
+<div class="page-wrapper">
+
+<div class="nav"><nav-component></nav-component></div>
+<div class="main">
+
 <div class="grid-wrapper">
-<main class="main-container">
+<main class="main-content">
 
 <div class="header">
   <h1>Educational Resources</h1>
@@ -30,6 +35,7 @@
   <a class="c1" href="http://www.dontfeartheinternet.com/" target="_blank">Basic HTML & CSS for NON-WEB Designers</a>
   <a class="c1" href="https://learn.sadgrl.online/" target="_blank">SadGirl <strong>(Beginners start here!)</strong></a>
   <a class="c1" href="https://learn.sadgrl.online/building-a-layout-from-start-to-finish/" target="_blank">SadGirl's layout builder</a>
+  <a class="c1" href="https://css-tricks.com/what-the-heck-are-npm-commands/" target="_blank">Node & NPM</a>
   <a class="c1" href="https://blog.ncase.me/how-do-i-learn-x/" target="_blank">How to learn Anything</a>
   <a class="c1" href="http://programming-motherfucker.com/become.html#HTML%20/%20CSS" target="_blank">Programming Motherf*cker</a>
   <a class="c1" href="https://webaim.org/intro/" target="_blank">Intro to Web Accessibility</a>
@@ -60,10 +66,12 @@
 <div class="title">
   <h2>Blogs</h2>
 </div>
+  <a href="https://css-tricks.com/" target="_blank">CSS Tricks</a>
   <a href="https://www.sitepoint.com/blog/" target="_blank">SitePoint</a>
   <a href="https://redstapler.co/" target="_blank">Red Stapler</a>
   <a href="https://www.geeksforgeeks.org/" target="_blank">GeeksForGeeks</a>
   <a href="https://www.hongkiat.com/blog/" target="_blank">Hongkiat</a>
+  <a href="https://cliquestudios.com/insights-guides/" target="_blank">Clique studios</a>
 
 <div class="title">
   <h2>Interactive Lessons</h2>
@@ -72,7 +80,6 @@
 </div>
   <a class="c1" href="https://fireship.io/lessons/" target="_blank">FireShip</a>
   <a class="c2" href="https://developer.android.com/courses/android-basics-kotlin/course" target="_blank">Android Basics In Kotlin</a>
-
 
 <div class="title">
   <h2>WebDev Cheat Sheets</h2>
@@ -120,8 +127,14 @@
   <a class="c7" href="https://www.codecademy.com/learn/introduction-to-regular-expressions/modules/intro-to-regex/cheatsheet" target="_blank">Regular Expressions</a>
 
 <div class="title"></div><a class="c0 foot" href="/content/grays-tea/contact.html">Have a good addition to this page? Contact me!</a>
+
 </main>
 </div>
-<footer-component></footer-component>
+
+</div>
+
+<div class="footer"><footer-component></footer-component></div>
+
+</div>
     </body>
 </html>

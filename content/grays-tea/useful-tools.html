@@ -7,15 +7,20 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i" />
         <link rel="stylesheet" href="/CSS/reset.css">
         <link rel="stylesheet" href="/CSS/document-list.css">
+        <link rel="stylesheet" href="/CSS/document-layout.css">
         <link rel="stylesheet" href="/CSS/nav-footer.css">
         <script src="/JS/nav.js" defer></script>
         <script src="/JS/footer.js" defer></script>
     </head>
     <body>
 
-<nav-component></nav-component>
+<div class="page-wrapper">
+
+<div class="nav"><nav-component></nav-component></div>
+<div class="main">
+
 <div class="grid-wrapper">
-<main class="main-container">
+<main class="main-content">
 
 <div class="header">
   <h1>Useful tools</h1>
@@ -44,7 +49,7 @@
 <a href="https://curlie.org/" target="_blank">Curlie</a>
 
 <div class="title">
-  <h2>Website Widgets</h2>
+  <h2>Website</h2>
   <p class="c1">Widgets</p>
   <p class="c5">Functionality</p>
 </div>
@@ -72,10 +77,17 @@
 <a class="c1" href="https://www.netlify.com/pricing/" target="_blank">Netlify</a>
 <a class="c2" href="https://webdock.io/en" target="_blank">Webdock</a>
 <a class="c3" href ="https://codepen.io/pen" target="_blank">Codepen</a>
+<a class="c3" href ="https://jsfiddle.net/" target="_blank">JSFiddle</a>
 <a class="c4" href ="https://www.sharedrop.io/" target="_blank">Sharedrop</a>
 <a class="c4" href ="https://knightfile.com/" target="_blank">KnightFile</a>
 <a class="c6" href ="https://imgur.com/" target="_blank">Imgur</a>
 <a class="c7" href ="https://psty.io/new" target="_blank">Psty</a>
+
+<div class="title">
+  <h2>Paid Services</h2>
+  <p class="c1">Domain Names</p>
+</div>
+<a class="c1" href="https://www.namecheap.com/" target="_blank">NameCheap</a>
 
 <div class="title">
   <h2>APIs</h2>
@@ -128,15 +140,26 @@
   <h2>Software</h2>
   <p class="c1">Development</p>
   <p class="c2">Networking</p>
-  <p class="c6">Graphics</p>
+  <p class="c4">Graphics</p>
+  <p class="c6">Data organization</p>
+  <p class="c7">Prototyping & Diagrams</p>
 </div>
 <a class="c1" href="https://code.visualstudio.com/" target="_blank">VSCode</a>
 <a class="c2" href="https://deluge-torrent.org/" target="_blank">deluge-torrent</a>
-<a class="c6" href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a>
-<a class="c6" href="https://www.getpaint.net/" target="_blank">paint.net</a>
-<a class="c6" href="https://www.gimp.org/" target="_blank">Gimp</a>
-<a class="c6" href="https://pnggauntlet.com/" target="_blank">PNG Gauntlet</a>
-<a href="https://www.zotero.org/" target="_blank">Zotero</a>
+<a class="c4" href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a>
+<a class="c4" href="https://www.getpaint.net/" target="_blank">paint.net</a>
+<a class="c4" href="https://www.gimp.org/" target="_blank">GIMP</a>
+<a class="c4" href="https://pnggauntlet.com/" target="_blank">PNG Gauntlet</a>
+<a class="c6" href="https://github.com/gristlabs/grist-core" target="_blank">Grist Core</a>
+<a class="c6" href="https://www.zotero.org/" target="_blank">Zotero</a>
+<a class="c7" href="https://draw.io/" target="_blank">Draw.io (My favorite tool!)</a>
+<a class="c7" href="https://mydraft.cc/" title="test" target="_blank">MyDraft (Website Wireframe)</a>
+<a class="c7" href="https://getwirefy.com/" title="test" target="_blank">Wirefy</a>
+<a class="c7" href="https://wireframe.cc/" target="_blank">Wireframe.cc</a>
+<a class="c7" href="http://framebox.org/" target="_blank">Framebox</a>
+<a class="c7" href="https://pencil.evolus.vn/" target="_blank">Pencil Project</a>
+<a class="c7" href="https://www.justinmind.com/" target="_blank">JustInMind</a>
+<a class="c7" href="https://terrastruct.com/#features" target="_blank">Terrastruct</a>
 <a href="http://weewx.com/" target="_blank">Weather Station</a>
 
 
@@ -151,8 +174,14 @@
 <a href="https://grabify.link/" target="_blank">Grabify</a>
 
 <div class="title"></div><a class="c0 foot" href="/content/grays-tea/contact.html">Have a good addition to this page? Contact me!</a>
+
 </main>
 </div>
-<footer-component></footer-component>
+
+</div>
+
+<div class="footer"><footer-component></footer-component></div>
+
+</div>
     </body>
 </html>

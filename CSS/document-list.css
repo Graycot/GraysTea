@@ -13,6 +13,7 @@ body{
   min-height:90.8vh;
 
   background-color: #EEEEEE;
+  border: 1px solid rgb(130, 130, 130);
   border-radius: .5rem;
 }
 .grid-wrapper * {
@@ -27,8 +28,8 @@ body{
 }
 
 /*        main container       */
-.main-container{
-  font-size: 17px;
+.main-content{
+  font-size: 18px;
   color:#444;
 }
 
@@ -41,17 +42,17 @@ body{
 /*        .link-buttons       */
 
 
-.main-container a { 
+.main-content a { 
   display: inline-block;
   border: 1px solid rgb(121, 121, 121);
   padding: 0.1rem .4rem;
   margin: 0.2rem 0.1rem;
   border-radius: .5rem;
+  font-size: 22px;
 }
 
 h2 { 
   display: inline-block;
-  height: rem;
   font: 700 1.25rem "Roboto"; color: hsl(000, 0%, 30%);
   margin: auto 0.3rem auto 0.3rem;
 }
@@ -65,8 +66,9 @@ h2 {
   padding: 0.4rem 0;
 }
 
-
-p:not(.title p):not(.header p) { 
+/* not(.title p):not(.header p) so that summary p's are not stylized.*/
+/* not(#nav-logo) due to this selector specificity overriding the ID selector for nav-logo's p style in a specific edge case. (not on home page and on desktop layout)*/
+p:not(.title p):not(.header p):not(#nav-logo) { 
   display: inline-block;
   border: 1px dashed #444;
   padding: .1rem .4rem;
@@ -84,7 +86,7 @@ p:not(.title p):not(.header p) {
 }
 
 /*  Hover Effect */
-.main-container a:hover, .main-container a:focus {
+.main-content a:hover, .main-content a:focus {
   transform:scale(1.05, 1.15);
   transition: 0.2s; 
   box-shadow: inset 0 -0.15rem rgb(121, 121, 121);

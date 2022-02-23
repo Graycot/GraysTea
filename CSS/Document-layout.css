@@ -1,0 +1,21 @@
+.nav {grid-area: nav;}
+.main {grid-area: main;}
+.footer {grid-area: footer;}
+
+/* Mobile layout */
+.page-wrapper{
+  height: 100vh;
+  display: grid;
+  /*
+  Determine sizing attributes of the horizontal rows. The mobile layout (this one) is easy to follow, since each element occupies the entire width of the screen.
+  auto is used to expand/shrink the parent item to the size of the child's content.
+  1fr uses up all of the space left after the auto's have used their required space.
+  */
+  grid-template-rows: min-content auto min-content;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "nav"
+  "main"
+  "footer"
+  ;
+}
