@@ -1,6 +1,6 @@
 // onionring.js is licensed under the cooperative non-violent license (CNPL) v4+ (https://thufie.lain.haus/NPL.html)
 // it was originally made by joey + mord of allium (è’œ) house, last updated 2020-11-24
-// Modified by Gray (GraysTea.neocities.org) Jan. 31, 2022. Compacted into a single file rather than 4. Include CSS in the js file. Replaced tables with a more flexible setup.  All credit goes to the original OnionRing Creators.
+// Modified by Gray (GraysTea.neocities.org) Jan. 31, 2022. Compacted files into 2. Include CSS in the js file. Replaced tables with a more flexible setup.  All credit goes to the original OnionRing Creators.
 
 var ringName = 'Cozy Ring';
 var ringID = 'CozyRing';

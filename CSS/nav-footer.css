@@ -3,15 +3,17 @@
 .nav-element {
   height: 100%;
   background-color: #1d1f1d;
-  padding: 0.2rem .5rem;
+  padding: 0.2rem .4rem;
   display: flex;
-  justify-content: right;
+  justify-content:center;
+  
 }
 
 
 /*                Buttons                 */
 
 /*  Color */
+.nav-button-0 {color: rgb(153, 142, 125); border: 1px solid rgb(153, 142, 125);}
 .nav-button-1 {color: #b3b6b3; border: 1px solid #b3b6b3;}
 .nav-button-2 {color: #92bfe7; border: 1px solid #92bfe7;}
 .nav-button-3 {color: #6b99fd; border: 1px solid #6b99fd;}
@@ -27,12 +29,6 @@
 .nav-button-13 {color: #5618c9; border: 1px solid #5618c9;}
 
 
-.logo-button {
-  color: rgb(153, 142, 125); border: 1px solid rgb(153, 142, 125);
-  padding: .25rem .6rem;
-  margin: 0.2rem 0rem;
-  border-radius: .5rem;
-}
 
 /* Shape & Size*/
 
@@ -43,6 +39,7 @@
   margin: .2rem .1rem;
   border-radius: .3rem;
   display: inline-block;
+  font: 400 1rem/1 "Poppins", "sans-serif";
 }
 
 .nav-button:hover, .nav-button:focus{
@@ -51,14 +48,17 @@
   color: rgb(153, 142, 125); border: 1px solid rgb(153, 142, 125);
 }
 
-.logo-button:hover, .logo-button:focus{
-  transform:scale(1.1, 1.05);
-  transition: 0.3s;
-  color: hsla(0,0%,27%,1); border: 1px solid hsla(0,0%,27%,1);
-}
 
 
 /*                Logo                 */
+
+.logo-button {
+  color: rgb(153, 142, 125); border: 1px solid rgb(153, 142, 125);
+  padding: .4rem .8rem;
+  margin: 0.1rem 0rem;
+  border-radius: .5rem;
+}
+
 .logo-element{
   height: 100%;
   width: 100%;
@@ -70,16 +70,12 @@
   font: 600 1.5rem/1 "Poppins", "sans-serif";
 }
 
-/*             Mobile defaults:             */
-
-
-.navigation{
-  display: initial;
+#nav-logo{
+  display: none;
 }
-
 /*             Desktop, Tablet, and Mobile Header Logic             */
 
-@media only screen and (max-width: calc(950px)) {
+@media only screen and (max-width: 950px) {
   /* !!! 
   .navigation{
     display: none;
@@ -97,6 +93,16 @@
     border: none;
   }
   
+}
+
+@media only screen and (min-width: 1150px) {
+.logo-element{
+  display: none;
+}
+#nav-logo{
+  display:inline-block;
+  transform: none;
+}
 }
 
 /*                Footer                 */
@@ -131,11 +137,3 @@
   display: none;
 }
 
-/*
-.header-element{
-  display: none;
-}
-.logo-element {
-  display: none;
-}
-*/

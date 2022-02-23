@@ -2,7 +2,7 @@
 
 html * {
     margin:           unset;
-    box-sizing:       unset;
+    box-sizing:       border-box;
     padding:          unset;
     color:            unset;
     text-decoration:  unset;

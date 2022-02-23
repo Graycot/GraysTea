@@ -1,9 +1,9 @@
-.navigation{
+.webring-list{
   background-color: #e0e0e0;
 }
 .webrings-element{
-  font-size: 16px;
-  padding: .1rem .2rem;
+  font: 400 0.9rem/1 "Poppins", "sans-serif";
+  padding: .3rem .4rem;
   margin: 0.0rem  auto;
   max-width:max-content;
 }
@@ -11,10 +11,11 @@
 .webrings-element .webring-bin{
   display: inline-block;
   padding: 0rem 0.05rem;
-  border: 1px solid #444;
+  border: 1px solid rgb(130, 130, 130);
   padding: .2rem .40rem;
-  margin: 0.15rem 0.05rem;
+  margin: 0.0rem 0.1rem;
   border-radius: .3rem;
+  background-color: #EEEEEE;
 
 }
 
