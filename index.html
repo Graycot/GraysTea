@@ -7,7 +7,14 @@
   <link rel="stylesheet" href="/CSS/reset.css">
   <link rel="stylesheet" href="/CSS/index.css">
   <link rel="stylesheet" href="/CSS/nav-footer.css">
+  <link rel="stylesheet" href="/CSS/document.css">
   <link rel="stylesheet" href="/CSS/webrings.css">
+
+  <script src="/JS/webring-list.js" defer></script>
+  <script src="/JS/logo.js" defer></script>  
+  <script src="/JS/nav.js" defer></script>
+  <script src="/JS/welcome.js" defer></script>
+  <script src="/JS/footer.js" defer></script>
 
   <title>Grays Tea</title>
 </head>
@@ -16,16 +23,10 @@
     <div class="item logo"><logo-component></logo-component></div>
     <div class="item nav"><nav-component></nav-component></div>
     <div class="item webring-list"><webring-list-component></webring-list-component></div>
-    <div class="item main"><embed class="main-embed" src="/content/grays-tea/welcome.html"/></div>
-    <div class="item sidebar1"><div class="wrap"><iframe class="sidebar1-element" src="https://discord.com/widget?id=922391351943901205&theme=dark"  allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></div></div>
-    <div class="item sidebar2"><div class="wrap"><iframe class="sidebar2-element" src="https://www3.cbox.ws/box/?boxid=3512551&boxtag=gDwbPf"  allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe></div></div>
-    <div class="item other">other</div>
+    <div class="item main"><welcome-component></welcome-component></div>
+    <div class="item sidebar1"><iframe class="sidebar1-element" src="https://discord.com/widget?id=922391351943901205&theme=dark"  allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></div>
+    <div class="item sidebar2"><iframe class="sidebar2-element" src="https://www3.cbox.ws/box/?boxid=3512551&boxtag=gDwbPf"  allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe></div>
     <div class="item footer"><footer-component></footer-component></div>
   </div>
-
-  <script src="/JS/logo.js" defer></script>  
-  <script src="/JS/nav.js" defer></script>
-  <script src="/JS/footer.js" defer></script>
-  <script src="/JS/webring-list.js" defer></script>
 </body>
 </html>

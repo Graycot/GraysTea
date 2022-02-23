@@ -1,12 +1,12 @@
 /*                Layouts               */
 
 /* general boilerplate that grid-template-areas uses to define the classes affected by placement. */
+.logo {grid-area: logo;}
 .nav {grid-area: nav;}
 .webring-list {grid-area: webring-list;}
 .main {grid-area: main;}
 .sidebar1 {grid-area: sidebar1;}
 .sidebar2 {grid-area: sidebar2;}
-.other {grid-area: other;}
 .footer {grid-area: footer;}
 
 /* Mobile layout */
@@ -17,7 +17,7 @@
   auto is used to expand/shrink the parent item to the size of the child's content.
   1fr uses up all of the space left after the auto's have used their required space.
   */
-  grid-template-rows: auto auto auto 1fr auto auto auto auto;
+  grid-template-rows: auto auto auto 1fr auto auto auto;
   grid-template-columns: 1fr;
   grid-template-areas:
   "logo"
@@ -25,7 +25,6 @@
   "webring-list"
   "main"
   "sidebar2"
-  "other"
   "sidebar1"
   "footer"
   ;
@@ -42,7 +41,7 @@
     more than 2 fr's will result in the space remaining (after autos) to be split at the fractional value
     with a denomination being the sum of fr coefficents(1/2 in this case)
     */
-    grid-template-rows: auto auto 1fr 1fr auto auto;
+    grid-template-rows: auto auto 1fr 1fr auto;
     /* Same idea as the rows, but implemented on the vertical columns.*/
     grid-template-columns: auto 1fr 1fr 1fr;
     grid-template-areas:
@@ -50,10 +49,10 @@
     "sidebar1 webring-list webring-list webring-list"
     "sidebar1 main main main"
     "sidebar2 main main main"
-    "other other other other"
     "footer footer footer footer"
     ;
   }
+  
 }
 
 
@@ -63,67 +62,23 @@
 
   .container{
     display: grid;
-    grid-template-rows: auto auto 1fr auto auto;
+    grid-template-rows: auto auto 1fr auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-    "logo nav nav nav nav"
+    "nav nav nav nav nav"
     "sidebar1 webring-list webring-list webring-list sidebar2"
     "sidebar1 main main main sidebar2"
-    "other other other other other"
     "footer footer footer footer footer"
     ;
   }
 }
 
 
-/*                .main and hardcoded heights (to fit the welcome.html embed without a scrollbar)               */
-
-/* mobile height */
-.main{
-  height: 67rem;
-}
-
-/* mobile + (anything above the max width of .main-element in document.css) */
-/* the text area width increases, decreasing the needed height. */
-@media (min-width: calc(600px + 1rem)) {
-  .main {
-    min-height: 62rem;
-    height: 100%;
-  }
-
-}
-
-/* super-wide monitors.  */
-/* the font size and max width of .main element are increased in document.css */
-/* the font makes the text area increase in height needed to display the embed without a scrollbar. */
-@media (min-width: 1800px) {
-  .main{
-    height: 100%;
-  }
-}
-
-/* make the embed fill .main */
-.main-embed{
-  height: 100%;
-  width: 100%;
-}
-
-
 
 /*                sidebar2 & sidebar1              */
 
-.sidebar2-element{
-  height: 100%;
-  width: 100%;
-}
 
-.sidebar1-element{
- height: 100%;
- width: 100%;
-
-}
-
-.wrap{
+.sidebar1-element, .sidebar2-element{
   height: 100%;
   width: 100%;
   min-height: 25rem;
@@ -136,19 +91,3 @@
 
 /*                temporary for dev purposes               */
 
-.container{
-  /*gap: .1rem 0rem;*/
-  background-color: hsla(36, 5%, 21%, 0.25);
-}
-
-.item {
-  background-color: #f5f5f5;
-
-  /*width:*/
-
-
-}
-
-.other {
-  display: none;
-}
