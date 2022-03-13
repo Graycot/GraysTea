@@ -8,6 +8,11 @@ class Webrings extends HTMLElement {
 
     <main class="webrings-element">
       <div class="webring-bin">
+      <a href="https://graycot.com/webring/loop-redirect.html?action=prev"> < </a>
+      <a href="https://graycot.com/webring/index.html"> Loop Ring </a>
+      <a href="https://graycot.com/webring/loop-redirect.html?action=next"> > </a>
+      </div>
+      <div class="webring-bin">
         <a href="https://webring.yesterweb.org/noJS/index.php?d=prev&url=https://graystea.neocities.org/"> <</a>
         <a href="https://yesterweb.org/webring/">Yesterweb</a>
         <a href="https://webring.yesterweb.org/noJS/index.php?d=next&url=https://graystea.neocities.org/"> > </a>
@@ -31,6 +36,12 @@ class Webrings extends HTMLElement {
         <a href="http://geekring.net/site/156/previous"> < </a>
         <a href="https://geekring.net/" target="_blank"> GeekRing </a>
         <a href="http://geekring.net/site/1/next"> > </a>
+      </div>
+      <div class="webring-bin">
+        <a href="https://list-me.com"> ListMe </a>
+      </div>
+      <div class="webring-bin">
+        <a href="http://linklane.net"> LinkLane </a>
       </div>
     </main>
 

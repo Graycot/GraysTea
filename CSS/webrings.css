@@ -1,9 +1,10 @@
 .webring-list{
   background-color: #e0e0e0;
+  border-bottom: 1px dotted rgb(130, 130, 130);;
 }
 .webrings-element{
   font: 400 0.9rem/1 "Poppins", "sans-serif";
-  padding: .3rem .4rem;
+  padding: .4rem .4rem;
   margin: 0.0rem  auto;
   max-width:max-content;
 }
@@ -13,14 +14,14 @@
   padding: 0rem 0.05rem;
   border: 1px solid rgb(130, 130, 130);
   padding: .2rem .40rem;
-  margin: 0.0rem 0.1rem;
+  margin: 0.15rem 0.05rem;
   border-radius: .3rem;
   background-color: #EEEEEE;
 
 }
 
 .webrings-element .webring-bin:hover, .webrings-element .webring-bin:focus { 
-  transform:scale(1.05, 1.1);
+  transform:scale(1.05, 1.15);
   transition: 0.3s;
   box-shadow: inset 0 -0.10rem rgb(107, 99, 88); 
 }

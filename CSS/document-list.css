@@ -3,14 +3,17 @@ body{
   background-color: #e0e0e0;
   
 }
+
+
+
 .grid-wrapper {
   display:grid;
   grid-template-columns: 5% [start] 90% [end] 5%;
   
-  margin: 0.5rem auto 0.5rem auto;
+  margin: 1rem auto 1rem auto;
   padding:.5rem 0rem;
   max-width:600px;
-  min-height:90.8vh;
+  
 
   background-color: #EEEEEE;
   border: 1px solid rgb(130, 130, 130);
@@ -20,11 +23,20 @@ body{
   grid-column: start/end;
 }
 
-@media (min-width: 1400px) {
-  .grid-wrapper * {font-size: 24px;}
+@media (min-width: 1450px) {
   .grid-wrapper {
-  max-width:900px;
+  max-width:800px;
   }
+}
+
+hr {
+  background-image: linear-gradient(to right, #e0e0e0 0%, #bbbbbb 20%, rgb(130, 130, 130) 30%, #444 50%, rgb(130, 130, 130) 70%, #bbbbbb 80%,#e0e0e0 100%);
+  width: 90%;
+  border: 0;
+  height: 1px;
+
+  display: block;
+  margin: 0.5em auto;
 }
 
 /*        main container       */
