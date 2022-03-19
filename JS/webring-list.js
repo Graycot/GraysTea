@@ -38,35 +38,26 @@ class Webrings extends HTMLElement {
         <a href="http://geekring.net/site/1/next"> > </a>
       </div>
       <div class="webring-bin">
+        <a href="//nightfall.city/writers-lane/">Writer's Lane, Nightfall City</a>
+      </div>
+      <div class="webring-bin">
+      <a href="https://smoothsailing.asclaria.org/"> Smooth Sailing </a>
+      </div>
+      <div class="webring-bin">
+      <a href="https://fans.thislove.nu/html"> HTML </a>
+      </div>
+      <div class="webring-bin">
+      <a href="https://fans.thislove.nu/css/"> CSS </a>
+      </div>
+      <div class="webring-bin">
         <a href="https://list-me.com"> ListMe </a>
       </div>
       <div class="webring-bin">
         <a href="http://linklane.net"> LinkLane </a>
       </div>
-      <div class="webring-bin">
-        <a href="https://smoothsailing.asclaria.org/"> Smooth Sailing </a>
-      </div>
-      <div class="webring-bin">
-        <a href="https://nerdlistings.info/"> Nerd Listings </a>
-      </div>
-      <div class="webring-bin">
-        <a href="https://milkyglitter.webs.com/pretend/"> Pretend </a>
-      </div>
-      <div class="webring-bin">
-        <a href="https://10-31.net/fans/internet/index.php"> Internet </a>
-      </div>
-      <div class="webring-bin">
-        <a href="https://fans.thislove.nu/html"> HTML </a>
-      </div>
-      <div class="webring-bin">
-        <a href="https://fans.thislove.nu/css/"> CSS </a>
-      </div>
-      <div class="webring-bin">
-        <a href="https://gryffindors.com/sarina/web/index.php"> WebSurfing </a>
-      </div>
-    </main>
-
-    `;
+      </main>
+      
+      `;
   }
 }
 
